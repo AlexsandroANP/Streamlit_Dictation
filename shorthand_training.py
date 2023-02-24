@@ -13,13 +13,13 @@ import re
 st.title('英语听力速记训练')
 st.markdown("__*可以随机生成一段用于英语听力速记的音频*__")
 
-for curDir, dirs, files in os.walk("/app/Streamlit_Dictation/", topdown=True):
+for curDir, dirs, files in os.walk("/app/streamlit_dictation/", topdown=True):
   st.text("现在的目录：" + curDir)
   st.text("该目录下包含的子目录：" + str(dirs))
   st.text("该目录下包含的文件：" + str(files))
 
-a1 = AudioSegment.from_wav('/app/Streamlit_Dictation/audio_chuncks/a.wav')
-a2 = AudioSegment.from_wav('/app/Streamlit_Dictation/audio_chuncks/b.wav')
+a1 = AudioSegment.from_wav('/app/streamlit_dictation/audio_chuncks/a.wav')
+a2 = AudioSegment.from_wav('/app/streamlit_dictation/audio_chuncks/b.wav')
 
 #print(type(a1))
 #print(type(a2))
