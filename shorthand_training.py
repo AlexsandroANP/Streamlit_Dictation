@@ -9,8 +9,11 @@ import time #计时库
 import datetime
 import re
 
-a1 = AudioSegment.from_wav('/app/wechatoa_streamlit/audio_chuncks/a.wav')
-a2 = AudioSegment.from_wav('/app/wechatoa_streamlit/audio_chuncks/b.wav')
+
+
+
+a1 = AudioSegment.from_wav('/app/Streamlit_Dictation/audio_chuncks/a.wav')
+a2 = AudioSegment.from_wav('/app/Streamlit_Dictation/audio_chuncks/b.wav')
 
 #print(type(a1))
 #print(type(a2))
