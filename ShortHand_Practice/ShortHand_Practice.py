@@ -7,6 +7,7 @@ import random
 import re
 import io
 import glob 
+import os
 
 def audio_generater(playlist,pause):
     track = AudioSegment.silent(3000)
