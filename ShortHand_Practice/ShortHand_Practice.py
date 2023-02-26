@@ -31,7 +31,7 @@ def vocaburaries_displayer(playlist):
             
 
 with st.spinner('Fetching Chuncks ...'):
-    chuncks_list = glob.glob('/app/streamlit_app/shortHand_practice/audio_chuncks/*.ogg')
+    chuncks_list = glob.glob('/app/streamlit_apps/shorthand_practice/audio_chuncks/*.ogg')
     chuncks_numbers = len(chuncks_list)
     
 st.title('ShortHand Practice for Dictation')
