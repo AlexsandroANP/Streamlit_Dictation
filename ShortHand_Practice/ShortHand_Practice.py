@@ -30,18 +30,12 @@ def vocaburaries_displayer(playlist):
         else:
             st.text('{:0>2d} {:^20}'.format(playlist.index(i)+1,name[0]))
             
-
-f_view = os.listdir()
-for i in f_view:
-    st.text(f_view)
-        
+ 
 with st.spinner('Fetching Chuncks ...'):
-    chuncks_list = glob.glob('/app/streamlit_apps/shorthand_practice/audio_chuncks/*.ogg')
+    chuncks_list = glob.glob('/app/streamlit_apps/ShortHand_Practice/audio_chuncks/*.ogg')
     chuncks_numbers = len(chuncks_list)
-    
 
-    
-st.title('ShortHand Practice for Dictation')
+st.title('ShortHand Practice')
 st.caption('英文关键词速记练习')
 st.markdown("__*Generating a Slice of Audio in ramdom words to Practise Shorthand Skill by Dictation*__")
 st.caption("__*可以随机生成一段用于英语听力速记的音频*__")
