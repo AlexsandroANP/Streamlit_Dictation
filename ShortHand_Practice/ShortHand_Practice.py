@@ -47,6 +47,7 @@ input_numbers = st.number_input('How Many words to Be dictated?',
                                 1, chuncks_numbers, 0,1)
 st.caption('☝︎ 单词出现数量')
 ''
+st.makedown(chuncks_numbers)
 pause = st.number_input('How long the pause would take?',
                                 1, chuncks_numbers, 3,1)
 st.caption('☝︎  停顿间隔长短')
