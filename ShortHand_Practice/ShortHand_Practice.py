@@ -43,11 +43,15 @@ st.caption("__*可以随机生成一段用于英语听力速记的音频*__")
 st.header("Preferences Settings")
 st.markdown("**生成设定**")
 ''
+
+st.markdown('max number should not greater than below:')
+st.makedown(chuncks_numbers)
+
 input_numbers = st.number_input('How Many words to Be dictated?',
-                                1, chuncks_numbers, 20,1)
+                                1, chuncks_numbers, 1,1)
 st.caption('☝︎ 单词出现数量')
 ''
-st.makedown(chuncks_numbers)
+
 pause = st.number_input('How long the pause would take?',
                                 1, chuncks_numbers, 3,1)
 st.caption('☝︎  停顿间隔长短')
