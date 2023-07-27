@@ -35,6 +35,8 @@ with st.spinner('Fetching Chuncks ...'):
     chuncks_list = glob.glob('/app/streamlit_apps/ShortHand_Practice/audio_chuncks/*.ogg')
     chuncks_numbers = len(chuncks_list)
 
+st.markdown(chuncks_list)
+
 st.title('ShortHand Practice')
 st.caption('英文关键词速记练习')
 st.markdown("__*Generating a Slice of Audio in ramdom words to Practise Shorthand Skill by Dictation*__")
