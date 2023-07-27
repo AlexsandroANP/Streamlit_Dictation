@@ -45,7 +45,7 @@ st.markdown("**生成设定**")
 ''
 
 st.markdown('max number should not greater than below:')
-st.makedown(chuncks_numbers)
+st.markdown(chuncks_numbers)
 
 input_numbers = st.number_input('How Many words to Be dictated?',
                                 1, chuncks_numbers, 1,1)
