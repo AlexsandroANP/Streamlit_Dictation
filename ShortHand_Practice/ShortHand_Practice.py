@@ -44,7 +44,7 @@ st.header("Preferences Settings")
 st.markdown("**生成设定**")
 ''
 input_numbers = st.number_input('How Many words to Be dictated?',
-                                1, chuncks_numbers, 0,1)
+                                1, chuncks_numbers, 20,1)
 st.caption('☝︎ 单词出现数量')
 ''
 st.makedown(chuncks_numbers)
